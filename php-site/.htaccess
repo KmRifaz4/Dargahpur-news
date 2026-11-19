@@ -1,0 +1,15 @@
+# দরগাহপুর সংবাদ — Apache নিরাপত্তা ও কনফিগারেশন
+Options -Indexes
+
+# ডাটাবেস ও কনফিগ ফাইলে সরাসরি ব্রাউজার অ্যাক্সেস বন্ধ করুন
+<FilesMatch "\.(sqlite|db|sql)$">
+    Require all denied
+</FilesMatch>
+
+<Files "config.php">
+    Require all denied
+</Files>
+
+<Files "install_db.php">
+    Require all denied
+</Files>

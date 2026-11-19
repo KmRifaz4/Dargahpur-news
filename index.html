@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>দরগাহপুর সংবাদ | Dargahpur Sangbad — সত্যের পথে, জনপদের কণ্ঠস্বর</title>
+    <meta name="description" content="সাতক্ষীরার আশাশুনি ও দরগাহপুর অঞ্চলের সর্বশেষ সংবাদ, কৃষি, শিক্ষা, খেলাধুলা ও স্থানীয় জনজীবনের নির্ভরযোগ্য অনলাইন নিউজ পোর্টাল।">
+    <meta property="og:title" content="দরগাহপুর সংবাদ | Dargahpur Sangbad">
+    <meta property="og:description" content="সাতক্ষীরার আশাশুনি ও দরগাহপুর অঞ্চলের সর্বশেষ সংবাদ, কৃষি, শিক্ষা, খেলাধুলা ও স্থানীয় জনজীবনের নির্ভরযোগ্য অনলাইন নিউজ পোর্টাল।">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif+Bengali:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', 'sans-serif'],
+                        serif: ['"Noto Serif Bengali"', 'serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        primary: '#b91c1c', // Broadcast Crimson
+                        secondary: '#065f46', // Deep Emerald
+                        ink: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #ffffff;
+            color: #0f172a;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, .font-editorial {
+            font-family: 'Noto Serif Bengali', serif;
+            text-wrap: balance;
+        }
+        .tabular-nums {
+            font-variant-numeric: tabular-nums;
+        }
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        @media print {
+            header, footer, .no-print {
+                display: none !important;
+            }
+            body {
+                background: #ffffff !important;
+            }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body class="bg-white text-slate-900 selection:bg-red-700 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
